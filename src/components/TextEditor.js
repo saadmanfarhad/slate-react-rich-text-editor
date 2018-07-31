@@ -25,7 +25,7 @@ const initialValue = Value.fromJSON({
 
 export default class TextEditor extends Component {
   state = {
-    value: '',
+    value: initialValue,
   };
 
   onChange = ({ value }) => {
