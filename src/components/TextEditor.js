@@ -44,11 +44,11 @@ export default class TextEditor extends Component {
 
     switch (e.key) {
       case 'b': {
-        change.addMark('bold');
+        change.toggleMark('bold');
         return true;
       }
       case 'i': {
-        change.addMark('italic');
+        change.toggleMark('italic');
         return true;
       }
       default:
